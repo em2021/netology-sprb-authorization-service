@@ -8,6 +8,12 @@ group = 'ru.netology'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
+apply plugin: 'java'
+compileJava {
+	sourceCompatibility = '1.8'
+	targetCompatibility = '1.8'
+}
+
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
